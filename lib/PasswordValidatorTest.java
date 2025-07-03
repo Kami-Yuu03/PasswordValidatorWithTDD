@@ -47,14 +47,14 @@ public class PasswordValidatorTest{
         if (result6 == PasswordStrength.MEDIUM) {
             System.out.println("Test Case 6 Passed: 3 Style password is MEDIUM.");
         } else {
-            System.out.println("Test Case 6 FAILED: Expected WEAK but got " + result6);
+            System.out.println("Test Case 6 FAILED: Expected MEDIUM but got " + result6);
         }
         // Test Case 7: รหัสผ่านที่มี4ลักษณะควรจะ STRONG
         PasswordStrength result7 = PasswordValidator.validate("as12AS*/");
         if (result7 == PasswordStrength.STRONG) {
             System.out.println("Test Case 7 Passed: 4 Style password is STRONG.");
         } else {
-            System.out.println("Test Case 7 FAILED: Expected WEAK but got " + result7);
+            System.out.println("Test Case 7 FAILED: Expected STRONG but got " + result7);
         }
         System.out.println("--------------------------------");
     }
